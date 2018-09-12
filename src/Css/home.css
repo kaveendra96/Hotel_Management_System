@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#drawerBtn:hover{
+    -fx-background-color:#7239b3;
+}
