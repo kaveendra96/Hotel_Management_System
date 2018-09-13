@@ -6,12 +6,14 @@
 package Controller;
 
 import com.jfoenix.controls.JFXButton;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
  import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -197,19 +199,26 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void clickCustomerRegistation(ActionEvent event) {
+    private void clickCustomerRegistation(ActionEvent event) throws IOException {
+        AnchorPane anchorPane=FXMLLoader.load(this.getClass().getResource("../View/Customer_Registation.fxml"));
+        paneLoder.getChildren().setAll(anchorPane);
     }
 
-    @FXML
-    private void clickPayment(ActionEvent event) {
-    }
 
     @FXML
     private void clickBooking(ActionEvent event) {
     }
 
     @FXML
-    private void clickHome(ActionEvent event) {
+    private void clickHome(ActionEvent event) throws IOException {
+        AnchorPane anchorPaneHome=FXMLLoader.load(this.getClass().getResource("../View/Home.fxml"));
+        paneLoder.getChildren().setAll(anchorPaneHome);
+    }
+
+    @FXML
+    private void clickRooms(ActionEvent event) throws IOException {
+        AnchorPane anchorPaneHome=FXMLLoader.load(this.getClass().getResource("../View/Rooms.fxml"));
+        paneLoder.getChildren().setAll(anchorPaneHome);
     }
 
     

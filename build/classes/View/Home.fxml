@@ -63,7 +63,7 @@
                         <Font size="29.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton id="drawerBtn" fx:id="roomBtn" onAction="#clickPayment" prefHeight="94.0" prefWidth="404.0" stylesheets="@../Css/home.css" text="Rooms" textFill="#bbb5b5" GridPane.rowIndex="1">
+                  <JFXButton id="drawerBtn" fx:id="roomBtn" onAction="#clickRooms" prefHeight="94.0" prefWidth="404.0" stylesheets="@../Css/home.css" text="Rooms" textFill="#bbb5b5" GridPane.rowIndex="1">
                      <font>
                         <Font size="29.0" />
                      </font>
