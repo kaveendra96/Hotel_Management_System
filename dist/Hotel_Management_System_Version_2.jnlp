@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Hotel_Management_System_Version_2.jar" size="2615121" download="eager" />
+    <jar href="Hotel_Management_System_Version_2.jar" size="2625203" download="eager" />
     <jar href="lib/jfoenix.jar" size="2401594" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Hotel_Management_System_Version_2" >

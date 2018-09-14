@@ -188,9 +188,10 @@ public class HomeController implements Initializable {
      }
 
     @FXML
-    private void clickPayemnt(ActionEvent event) {
+    private void clickPayemnt(ActionEvent event) throws IOException {
      
-        
+        AnchorPane anchorPaneHome=FXMLLoader.load(this.getClass().getResource("../View/Payment.fxml"));
+        paneLoder.getChildren().setAll(anchorPaneHome);
         
     }
 

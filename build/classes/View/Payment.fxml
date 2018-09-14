@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PaymentController">
+<AnchorPane id="AnchorPane" prefHeight="778.0" prefWidth="1500.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.PaymentController">
     <stylesheets>
-        <URL value="@/Css/payment.css"/>
+        <URL value="@/Css/payment.css" />
     </stylesheets>
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="20.0" prefHeight="732.0" prefWidth="638.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTreeTableView prefHeight="738.0" prefWidth="928.0">
+               <columns>
+                  <TreeTableColumn prefWidth="75.0" text="Service ID" />
+                  <TreeTableColumn prefWidth="374.0" text="Service" />
+                  <TreeTableColumn prefWidth="184.0" text="From " />
+                  <TreeTableColumn prefWidth="187.0" text="To" />
+                  <TreeTableColumn prefWidth="109.0" text="Price" />
+               </columns>
+            </JFXTreeTableView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="980.0" layoutY="665.0" prefHeight="56.0" prefWidth="474.0" style="-fx-border-radius: 30px; -fx-background-color: #7239b3;" text="Print the Bill" textFill="#c3c3c3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="980.0" layoutY="587.0" prefHeight="56.0" prefWidth="474.0" style="-fx-background-color: #3689e6;" text="Card Payemnt" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="983.0" layoutY="21.0" prefHeight="494.0" prefWidth="474.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+         <children>
+            <AnchorPane layoutX="31.0" layoutY="95.0" prefHeight="361.0" prefWidth="402.0" style="-fx-border-color: #000; -fx-border-radius: 25px;">
+               <children>
+                  <Label layoutX="28.0" layoutY="72.0" prefHeight="15.0" prefWidth="127.0" text="Chose your card">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="153.0" prefHeight="15.0" prefWidth="127.0" text="Card Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="26.0" layoutY="182.0" prefHeight="48.0" prefWidth="354.0" style="-fx-border-color: #000; -fx-border-radius: 200px;">
+                     <children>
+                        <JFXTextField layoutX="17.0" layoutY="5.0" prefHeight="25.0" prefWidth="65.0" promptText="xxxx" />
+                        <JFXTextField layoutX="274.0" layoutY="4.0" prefHeight="25.0" prefWidth="65.0" promptText="xxxx" />
+                        <JFXTextField layoutX="189.0" layoutY="4.0" prefHeight="25.0" prefWidth="65.0" promptText="xxxx" />
+                        <JFXTextField layoutX="104.0" layoutY="4.0" prefHeight="25.0" prefWidth="65.0" promptText="xxxx" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="29.0" layoutY="95.0" prefHeight="48.0" prefWidth="234.0" style="-fx-border-color: #000; -fx-border-radius: 200px;">
+                     <children>
+                        <RadioButton layoutX="40.0" layoutY="20.0" mnemonicParsing="false" textFill="#24002b" />
+                        <RadioButton layoutX="125.0" layoutY="21.0" mnemonicParsing="false" />
+                        <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="152.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/icons8-mastercard-48.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="64.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/icons8-visa-48.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="29.0" layoutY="245.0" text="CVV">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="29.0" layoutY="274.0" prefHeight="48.0" prefWidth="86.0" style="-fx-border-color: #000; -fx-border-radius: 200px;">
+                     <children>
+                        <JFXTextField layoutX="12.0" layoutY="8.0" prefHeight="25.0" prefWidth="65.0" promptText="xxx" />
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="48.0" fitWidth="86.0" layoutX="130.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/icons8-card-verification-value-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="88.0" layoutY="20.0" prefHeight="15.0" prefWidth="218.0" text="Credit Cart Payment">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="161.0" layoutY="30.0" text="Payemnt">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

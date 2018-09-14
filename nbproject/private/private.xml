@@ -6,10 +6,13 @@
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Css/home.css</file>
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Css/payment.css</file>
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/View/Payment.fxml</file>
+            <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Css/rooms.css</file>
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Controller/HomeController.java</file>
+            <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Controller/RoomsController.java</file>
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/View/Home.fxml</file>
-            <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Controller/PaymentController.java</file>
+            <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Controller/Customer_RegistationController.java</file>
             <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/Main/Main.java</file>
+            <file>file:/home/nipun/Documents/Java_cmjd/Hotel_managemant/Hotel_Management_System_Version_2/src/View/Rooms.fxml</file>
         </group>
     </open-files>
 </project-private>
